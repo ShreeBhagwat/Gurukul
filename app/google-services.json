@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "76720304638",
+    "firebase_url": "https://gurukul-b7376.firebaseio.com",
+    "project_id": "gurukul-b7376",
+    "storage_bucket": "gurukul-b7376.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:76720304638:android:041a795ab8657f6e",
+        "android_client_info": {
+          "package_name": "com.example.shreebhagwat.gurukul"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "76720304638-c0uc64ndvgn9truehtrufd5c721qqda9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGGyiDBC37uTIu5IavMUsPcmy63aaexaE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
