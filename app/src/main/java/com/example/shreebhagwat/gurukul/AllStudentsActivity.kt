@@ -16,7 +16,7 @@ import com.xwray.groupie.GroupAdapter
 import com.xwray.groupie.Item
 import com.xwray.groupie.ViewHolder
 import kotlinx.android.synthetic.main.activity_all_users.*
-import kotlinx.android.synthetic.main.all_users_layout.view.*
+import kotlinx.android.synthetic.main.all_students.view.*
 
 class AllUsersActivity : AppCompatActivity() {
 
@@ -100,7 +100,7 @@ class StudentsItem(val student: Students): Item<ViewHolder>(){
         Picasso.get().load(student.studentImageUrl).into(viewHolder.itemView.imageview_AllUsers)
     }
     override fun getLayout(): Int {
-        return R.layout.all_users_layout
+        return R.layout.all_students
     }
 
 
