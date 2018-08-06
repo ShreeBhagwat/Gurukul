@@ -113,7 +113,7 @@ class RegisterActivity : AppCompatActivity() {
                 .addOnSuccessListener {
                     Log.d("RecentActivity","User Saved To Firebase Database")
 
-                    val intent = Intent(this, AllUsersActivity::class.java)
+                    val intent = Intent(this, MainScreen::class.java)
                     intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
                     startActivity(intent)
                 }

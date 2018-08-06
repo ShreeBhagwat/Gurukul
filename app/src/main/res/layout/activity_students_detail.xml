@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentsDetail">
+
+    <ScrollView
+        android:id="@+id/students_info_scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:clipToPadding="true"
+        android:scrollbarStyle="insideOverlay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/students_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/students_info_scrollView"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/st_students_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Students Details" />
+
+            <Button
+                android:id="@+id/st_photo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:text="Upload Photo" />
+
+            <EditText
+                android:id="@+id/student_full_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="@string/full_name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/st_fathers_full_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="Fathers Name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/st_Mothers_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Mothers Name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/st_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Full Adress"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/st_date_of_birth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Date of Birth(DD/MM/YYYY)"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/st_male_female"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Male/Female"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/st_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Phone Number"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/st_whatsApp_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Whats App Phone Number"
+                android:inputType="number|phone" />
+
+            <EditText
+                android:id="@+id/st_previous_school"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Previous School Name"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/st_addmission_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Addmission Details" />
+
+            <EditText
+                android:id="@+id/st_branch_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Branch Name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/st_standard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Standard"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/st_fees"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Fees"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/st_installments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="No Of Installment"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/st_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

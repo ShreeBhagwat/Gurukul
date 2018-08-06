@@ -24,13 +24,8 @@ class AllUsersActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_all_users)
 
-        verifyUsedLoggedIn()
 
-//        val adapter = GroupAdapter<ViewHolder>()
-//        adapter.add(StudentsItem())
-//        adapter.add(StudentsItem())
-//        adapter.add(StudentsItem())
-//        recycleview_alllusers.adapter = adapter
+
 
         fetchStudents()
     }
@@ -51,6 +46,12 @@ class AllUsersActivity : AppCompatActivity() {
                         }
 
                     }
+                    adapter.setOnItemClickListener { item, view ->
+                        val intent = Intent(view.context, StudentInfo::class.java)
+                        startActivity(intent)
+
+                    }
+
                     recycleview_alllusers.adapter = adapter
                 }
 
@@ -62,14 +63,7 @@ class AllUsersActivity : AppCompatActivity() {
     }
 
 
-    private fun verifyUsedLoggedIn() {
-        val uid = FirebaseAuth.getInstance().uid
-        if (uid == null) {
-            val intent = Intent(this, RegisterActivity::class.java)
-            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
-            startActivity(intent)
-        }
-    }
+
 
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
         when (item?.itemId) {
@@ -78,10 +72,7 @@ class AllUsersActivity : AppCompatActivity() {
                 startActivity(intent)
 
             }
-            R.id.create_new_teacher -> {
-                val intent = Intent(this, TeachersActivity::class.java)
-                startActivity(intent)
-            }
+
             R.id.log_out -> {
                 FirebaseAuth.getInstance().signOut()
                 val intent = Intent(this, RegisterActivity::class.java)

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Gurukul</string>
+    <string name="full_name">Full Name</string>
+    <string name="title_activity_main_screen">MainScreenActivity</string>
 </resources>
